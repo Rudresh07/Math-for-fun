@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Math For Fun</string>
+    <string name="divisionSymbol">/u00F7</string>
+</resources>
