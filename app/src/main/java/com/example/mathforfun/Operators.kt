@@ -14,6 +14,8 @@ class Operators : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         binding = ActivityOperatorsBinding.inflate(layoutInflater)
 
         setContentView(binding?.root)
@@ -33,36 +35,195 @@ class Operators : AppCompatActivity() {
             binding?.multiplication?.visibility = View.VISIBLE
         }
 
-        binding?.addition?.setOnClickListener {
 
-            val intent = Intent(this, Question_Page::class.java)
-            intent.putExtra("operations","addition")
-            startActivity(intent)
+        if (Standerd == "class1")
+        {
 
-             }
+            binding?.addition?.setOnClickListener {
 
-        binding?.subtrsction?.setOnClickListener {
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","addition")
+                intent.putExtra("class","class1")
+                startActivity(intent)
 
-            val intent = Intent(this, Question_Page::class.java)
-            intent.putExtra("operations","subtraction")
-            startActivity(intent)
+            }
+
+            binding?.subtrsction?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","subtraction")
+                intent.putExtra("class","class1")
+                startActivity(intent)
+
+            }
+
+        }
+
+
+
+        else if (Standerd == "class2")
+        {
+
+            binding?.addition?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","addition")
+                intent.putExtra("class","class2")
+                startActivity(intent)
+
+            }
+
+            binding?.subtrsction?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","subtraction")
+                intent.putExtra("class","class2")
+                startActivity(intent)
+
+            }
+
+            binding?.multiplication?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","multiplication")
+                startActivity(intent)
+
+            }
+
+            binding?.division?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","division")
+                startActivity(intent)
+
+            }
 
         }
 
-        binding?.multiplication?.setOnClickListener {
 
-            val intent = Intent(this, Question_Page::class.java)
-            intent.putExtra("operations","multiplication")
-            startActivity(intent)
+        else if (Standerd == "class3")
+        {
+
+            binding?.addition?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","addition")
+                intent.putExtra("class","class3")
+                startActivity(intent)
+
+            }
+
+            binding?.subtrsction?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","subtraction")
+                intent.putExtra("class","class3")
+                startActivity(intent)
+
+            }
+
+            binding?.multiplication?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","multiplication")
+                intent.putExtra("class","class3")
+                startActivity(intent)
+
+            }
+
+            binding?.division?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","division")
+                intent.putExtra("class","class3")
+                startActivity(intent)
+
+            }
 
         }
 
-        binding?.division?.setOnClickListener {
 
-            val intent = Intent(this, Question_Page::class.java)
-            intent.putExtra("operations","division")
-            startActivity(intent)
+
+        else if (Standerd == "class4")
+        {
+
+            binding?.addition?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","addition")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+
+            binding?.subtrsction?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","subtraction")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+
+            binding?.multiplication?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","multiplication")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+
+            binding?.division?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","division")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
 
         }
+
+        else
+        {
+            binding?.addition?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","addition")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+
+            binding?.subtrsction?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","subtraction")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+
+            binding?.multiplication?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","multiplication")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+
+            binding?.division?.setOnClickListener {
+
+                val intent = Intent(this, Question_Page::class.java)
+                intent.putExtra("operations","division")
+                intent.putExtra("class","class4")
+                startActivity(intent)
+
+            }
+        }
+
+
     }
 }
