@@ -3,6 +3,7 @@ package com.example.mathforfun
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import com.example.mathforfun.databinding.ActivityQuestionPageBinding
 import kotlin.random.Random
 
@@ -62,6 +63,9 @@ class Question_Page : AppCompatActivity() {
             // Clear the answer input field for the new question
             binding?.editText?.text?.clear()
         }
+
+
+
     }
 
     private fun generateQuestion(){
@@ -171,4 +175,10 @@ class Question_Page : AppCompatActivity() {
         // Compare the user's answer with the correct answer
         return userAnswer == correctAnswer
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }
