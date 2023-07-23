@@ -1,59 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_margin="10dp"
-    >
+    android:layout_margin="10dp">
 
-
-    <ImageView
+    <!-- Class 1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
         android:id="@+id/class1"
-        android:layout_width="180dp"
-        android:layout_height="120dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/class1"
+        android:layout_height="130dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <ImageView
-        android:id="@+id/class2"
-        android:layout_width="180dp"
-        android:layout_height="120dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/class2"
-        app:layout_constraintStart_toEndOf="@+id/class1"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/class1"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Class 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/class2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintStart_toEndOf="@+id/class1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/class2"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Class 3 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
         android:id="@+id/class3"
-        android:layout_width="180dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/class3"
+        android:layout_height="130dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="65dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/class1" />
-    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/class1">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/class3"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Class 4 -->
+    <androidx.cardview.widget.CardView
         android:id="@+id/class4"
-        android:layout_width="180dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/class4"
+        android:layout_width="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_height="130dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="65dp"
         app:layout_constraintStart_toEndOf="@id/class3"
-        app:layout_constraintTop_toBottomOf="@id/class2" />
-    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/class2">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/class4"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Class 5 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
         android:id="@+id/class5"
-        android:layout_width="180dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/class5"
+        android:layout_height="130dp"
+        android:layout_marginTop="45dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="65dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/class3" />
+        app:layout_constraintTop_toBottomOf="@id/class3">
 
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/class5"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
